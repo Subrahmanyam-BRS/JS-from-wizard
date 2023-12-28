@@ -16,31 +16,13 @@
 
 <body class="body-state1">
   <header>
-    <div class="d-flex bg-gradient">
-      <div class="d-flex flex-grow-1">
-        <nav class="courseTitle">
-          <button class="navbar-brand border-0">
-            
-          </button>
-        </nav>
-        <div class="flex-grow-1">
-          <div class="ReactTitle ps-3 d-flex align-items-center">
-            
-            <h3 class="mb-0"></h3>
-          </div>
-          <div class="d-flex ps-3 align-items-center">
-            <div class="flex-grow-1">
-              <h4>Form Wizard</h4>
-              <p class="pb-0 text-center"></p>
-              <p class="pb-0 mt-0 text-center"><a href="https://github.com/Subrahmanyam-BRS/JS-from-wizard" target="_blank" >Git Repository</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="pt-3">
+      <h4 class="text-center"> Form Wizard</h4>
+      <p class="pb-0 mt-0 text-center"><a href="https://github.com/ramareddy-brs/form-wizard" target="_blank" >Git Repository</a></p>
     </div>
   </header>
 
-  <main role="main text-center" style="height: 740px;">
+   <main role="main text-center" style="height: auto;">
     <div class="wrapper h-100">
       <div class="Grid Grid--full Grid--center" >
         <div class="Grid-cell h-80 OuterFormBlock"  style="background-color:aliceblue;">
@@ -87,6 +69,15 @@
                           autocomplete = "off"
                         />
                       </div>
+
+                      <label for="address">Address:</label>
+                      <textarea id="address" name="address" rows="2" cols="42"></textarea>
+
+                      <label for="city">City/Town:</label>
+                      <select id="city" name="city">
+                       <option value="">Select a city</option>
+                      </select>
+
                       <div class="radioGroup">
                         <label>Gender</label>
                         <div class="radioGroup">
@@ -220,20 +211,26 @@
     </div>
   </main>
 
+  
   <footer class="footer footer-dark">
     <div class="d-flex justify-content-center px-5">
-      
       <div>
-        <button onclick="setTheme('#1A4B84')" class="theme-switch theme-switch-chathams_blue"></button>
-        <button onclick="setTheme('#991E14')" class="theme-switch theme-switch-tamarillo"></button>
-        <button onclick="setTheme('#FEAD06')" class="theme-switch theme-switch-yellow_sea"></button>
-      </div>
-      <div>
-        <img src="" alt="" />
+        <button
+          onclick="setTheme('#1A4B84')"
+          class="theme-switch theme-switch-chathams_blue"
+        ></button>
+        <button
+          onclick="setTheme('#991E14')"
+          class="theme-switch theme-switch-tamarillo"
+        ></button>
+        <button
+          onclick="setTheme('#FEAD06')"
+          class="theme-switch theme-switch-yellow_sea"
+        ></button>
       </div>
     </div>
   </footer>
-
+  
 </body>
 <script defer src="assets/js/signup-step1.js"></script>
 <script defer src="assets/js/modal.js"></script>
